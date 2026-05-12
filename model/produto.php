@@ -31,3 +31,10 @@ function deletarProduto($id) {
     $stmt->bindParam(':id', $id);
     $stmt->execute();
 }
+
+
+function atualizarProduto($id, $nome, $quantidade, $preco) {
+    global $conexao;
+    $sql = $conexao->prepare("UPDATE tb_produto SET nome = :nome, quantidade = :quantidade, preco = :preco WHERE id = :id");
+    $sql->execute([':id' => $id, ':nome' => $nome, ':quantidade' => $quantidade, ':preco' => $preco]);
+}
