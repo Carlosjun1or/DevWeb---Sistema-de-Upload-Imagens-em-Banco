@@ -1,0 +1,53 @@
+/* =============================================
+   EDITAR.CSS — view específica de edição
+   ============================================= */
+
+.container h1::before {
+    content: '✏️';
+}
+
+form input[readonly] {
+    background: repeating-linear-gradient(
+        45deg,
+        #eff3ef,
+        #eff3ef 6px,
+        #e4eae4 6px,
+        #e4eae4 12px
+    );
+}
+
+.aviso-id {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: -14px;
+    margin-bottom: 18px;
+    font-style: italic;
+}
+
+.btn-cancelar {
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 12px;
+    padding: 10px 22px;
+    border: 2px solid var(--cinza-borda);
+    border-radius: 28px;
+    color: var(--texto-leve);
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-cancelar:hover {
+    border-color: var(--vermelho);
+    color: var(--vermelho);
+    background: #fff5f5;
+}
+
+.form-acoes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 4px;
+}

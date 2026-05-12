@@ -1,0 +1,62 @@
+/* =============================================
+   PRODUTOS.CSS — view de gerenciamento
+   ============================================= */
+
+.container h1::before {
+    content: '📦';
+}
+
+.container {
+    max-width: 960px;
+}
+
+.tabela-wrapper {
+    overflow-x: auto;
+    border-radius: var(--radius);
+    border: 1.5px solid var(--cinza-borda);
+}
+
+table {
+    min-width: 600px;
+}
+
+.status-estoque {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.status-ok {
+    background: #e8f5ec;
+    color: var(--verde-escuro);
+}
+
+.status-baixo {
+    background: #fff3cd;
+    color: #7a5800;
+}
+
+.status-zero {
+    background: #fdecea;
+    color: var(--vermelho);
+}
+
+.acoes-cell {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.total-produtos {
+    font-size: 0.85rem;
+    color: var(--texto-leve);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.total-produtos span {
+    color: var(--verde-escuro);
+    font-weight: 800;
+}
