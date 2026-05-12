@@ -23,6 +23,9 @@
         <label>Preço (R$)</label>
         <input type="number" name="preco" step="0.01" placeholder="0,00" min="0">
 
+        <label>Foto do Produto</label>
+        <input type="file" name="foto" accept="image/*">
+
         <input type="submit" value="Salvar Produto">
     </form>
 </div>
